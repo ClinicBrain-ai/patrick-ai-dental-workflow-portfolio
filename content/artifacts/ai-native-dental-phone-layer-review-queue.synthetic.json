@@ -1,0 +1,84 @@
+{
+  "queue_item_id": "SYN-QUEUE-021",
+  "source_packet_id": "SYN-PACKET-042",
+  "synthetic_case_notice": {
+    "synthetic_only": true,
+    "fictional": true,
+    "no_phi": true,
+    "not_for_clinical_use": true,
+    "no_automatic_patient_facing_final_messages": true
+  },
+  "workflow_state": "approved_for_manual_send",
+  "lifecycle": [
+    {
+      "state": "drafted",
+      "description": "A non-final AI-assisted draft was created from synthetic packet fields."
+    },
+    {
+      "state": "needs_review",
+      "description": "The draft was routed to a human reviewer before any external use."
+    },
+    {
+      "state": "edited",
+      "description": "The reviewer removed final-sounding language and added missing-information notes."
+    },
+    {
+      "state": "approved_for_manual_send",
+      "description": "A human reviewer marked the draft as ready for manual handling only. The system does not send it automatically."
+    }
+  ],
+  "risk_flags": [
+    "requires_human_review",
+    "no_diagnosis",
+    "no_treatment_recommendation",
+    "no_image_interpretation",
+    "no_automatic_send"
+  ],
+  "ai_generated_non_final_draft": {
+    "draft_id": "SYN-DRAFT-021-A",
+    "draft_text": "Fictional draft: Your materials have been organized into a preparation packet. Some items appear missing and should be reviewed before an appointment.",
+    "status": "non_final",
+    "patient_facing_final_message": false
+  },
+  "dentist_review_actions": [
+    {
+      "action": "reviewed_scope",
+      "result": "confirmed preparation-only language"
+    },
+    {
+      "action": "edited_text",
+      "result": "removed wording that could sound like final advice"
+    },
+    {
+      "action": "approved_for_manual_send",
+      "result": "manual approval only; no automatic delivery"
+    }
+  ],
+  "audit_events": [
+    {
+      "event_id": "AUDIT-001",
+      "state": "drafted",
+      "actor": "synthetic_ai_workflow",
+      "note": "Non-final draft created."
+    },
+    {
+      "event_id": "AUDIT-002",
+      "state": "needs_review",
+      "actor": "workflow_router",
+      "note": "Human review required."
+    },
+    {
+      "event_id": "AUDIT-003",
+      "state": "edited",
+      "actor": "human_reviewer",
+      "note": "Final-sounding phrase replaced."
+    },
+    {
+      "event_id": "AUDIT-004",
+      "state": "approved_for_manual_send",
+      "actor": "human_reviewer",
+      "note": "Ready for manual handling only."
+    }
+  ],
+  "final_status": "approved_for_manual_send_manual_only_no_automatic_delivery"
+}

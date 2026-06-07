@@ -1,0 +1,114 @@
+{
+  "packet_id": "SYN-PACKET-042",
+  "synthetic_case_notice": {
+    "synthetic_only": true,
+    "fictional": true,
+    "no_phi": true,
+    "local_only": true,
+    "not_for_clinical_use": true,
+    "no_diagnosis": true,
+    "no_treatment_recommendation": true,
+    "no_image_interpretation": true,
+    "no_automatic_second_opinion": true
+  },
+  "source_documents": [
+    {
+      "source_id": "SRC-001",
+      "source_type": "synthetic intake note",
+      "synthetic_label": "Fictional intake summary uploaded by sample user",
+      "provided_status": "provided",
+      "notes": "Contains general preparation goals only."
+    },
+    {
+      "source_id": "SRC-002",
+      "source_type": "synthetic document inventory",
+      "synthetic_label": "Fictional list of documents to bring to an appointment",
+      "provided_status": "provided",
+      "notes": "No real clinic names, phone numbers, emails, addresses, dates of birth, or real records."
+    }
+  ],
+  "imaging_metadata_inventory": [
+    {
+      "image_label": "SYN-IMG-LABEL-001",
+      "modality_label": "fictional panoramic image label",
+      "file_status": "metadata_label_only",
+      "metadata_complete": false,
+      "interpretation_status": "not_interpreted"
+    },
+    {
+      "image_label": "SYN-IMG-LABEL-002",
+      "modality_label": "fictional periapical image label",
+      "file_status": "metadata_label_only",
+      "metadata_complete": false,
+      "interpretation_status": "not_interpreted"
+    }
+  ],
+  "patient_reported_concerns": [
+    {
+      "concern_id": "CONCERN-001",
+      "reported_text": "Fictional person wants help organizing questions before an in-person dental visit.",
+      "source_id": "SRC-001",
+      "needs_human_review": true
+    }
+  ],
+  "external_plan_quotes": [
+    {
+      "quote_id": "QUOTE-001",
+      "source_id": "SRC-002",
+      "quoted_text": "Synthetic note says: bring prior records if available.",
+      "context_note": "Stored as a source quote only, without judging correctness.",
+      "review_status": "needs_human_review"
+    }
+  ],
+  "travel_timing_constraints": [
+    "Fictional traveler expects limited time in Taiwan.",
+    "Fictional appointment window is uncertain and must be discussed with a dentist or clinic staff."
+  ],
+  "cost_administrative_constraints": [
+    "Fictional user wants to ask what documents may be needed for receipts or insurance paperwork.",
+    "No price estimate, price guarantee, or affordability judgment is provided."
+  ],
+  "missing_information": [
+    {
+      "missing_item": "Prior dental chart",
+      "why_it_matters_for_workflow": "May help a human reviewer understand document history.",
+      "suggested_human_question": "Which prior records would be helpful to bring?"
+    },
+    {
+      "missing_item": "Medication list",
+      "why_it_matters_for_workflow": "Relevant for preparation and human review.",
+      "suggested_human_question": "Should an updated medication list be prepared before the visit?"
+    }
+  ],
+  "questions_for_human_review": [
+    "Which documents are missing or unclear?",
+    "Which source supports each summary item?",
+    "What should be clarified during an in-person appointment?"
+  ],
+  "provenance_records": [
+    {
+      "packet_field": "patient_reported_concerns",
+      "source_id": "SRC-001",
+      "support_level": "direct synthetic source",
+      "uncertainty_note": "Fictional concern only."
+    },
+    {
+      "packet_field": "travel_timing_constraints",
+      "source_id": "SRC-001",
+      "support_level": "synthetic user-provided context",
+      "uncertainty_note": "Timing must be confirmed manually."
+    }
+  ],
+  "safety_labels": {
+    "synthetic_only": true,
+    "no_phi": true,
+    "no_diagnosis": true,
+    "no_treatment_recommendation": true,
+    "no_prognosis": true,
+    "no_image_interpretation": true,
+    "no_automatic_second_opinion": true,
+    "human_review_required": true,
+    "no_automatic_patient_facing_final_message": true
+  },
+  "review_status": "needs_review"
+}

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dental Case Packet | Patrick Chen</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="../index.html"><strong>Patrick Chen</strong><span>AI dental workflow safety</span></a>
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../profile.html">Profile</a>
+        <a href="../narrative.html">Narrative</a>
+        <a href="../projects.html" aria-current="page">Projects</a>
+        <a href="../walkthrough.html">Walkthrough</a>
+        <a href="../safety.html">Safety</a>
+        <a href="../writing.html">Writing</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <p class="eyebrow">Project 01</p>
+      <h1>Dental Case Packet / AI-ready Dental Data Layer</h1>
+      <p>A synthetic-first, provenance-aware, human-reviewable organization layer for turning fragmented dental materials into safe workflow packets.</p>
+      <nav class="project-switcher" aria-label="Project detail pages">
+        <a href="dental-case-packet.html" aria-current="page">Dental Case Packet</a>
+        <a href="clinical-ai-review-harness.html">Review Harness</a>
+        <a href="ai-native-dental-phone-layer.html">Phone Layer</a>
+        <a href="taiwan-dental-prep.html">Taiwan Dental Prep</a>
+        <a href="../walkthrough.html">End-to-End Walkthrough</a>
+      </nav>
+    </section>
+
+    <section class="section">
+      <h2>Project Detail</h2>
+      <div class="detail-list">
+        <article class="detail-item"><h3>Problem</h3><p>Dental materials often arrive as disconnected notes, images, receipts, timelines, and patient concerns, making safe AI-assisted organization difficult.</p></article>
+        <article class="detail-item"><h3>Why this matters</h3><p>AI workflows need structured source context before any draft summary or review item can be responsibly generated and checked.</p></article>
+        <article class="detail-item"><h3>What this project does</h3><p>It organizes synthetic materials into a case packet with source lists, missing information, provenance notes, review questions, and manual review status.</p></article>
+        <article class="detail-item"><h3>What this project does NOT do</h3><p>It does not diagnose, recommend treatment, predict outcomes, interpret images, provide a second opinion, or send final advice to patients.</p></article>
+        <article class="detail-item"><h3>Current prototype status</h3><p>Static portfolio concept with synthetic examples and a proposed packet structure; no backend, no real records, and no live data processing.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Static Diagram</h2>
+      <div class="diagram">
+        <div class="diagram-step"><span class="step-label">Input</span><h3>Synthetic materials</h3><p>Fictional notes, file labels, concerns, and inventory items.</p></div>
+        <div class="diagram-step"><span class="step-label">Structure</span><h3>Case packet</h3><p>Organized fields, source references, and missing-information flags.</p></div>
+        <div class="diagram-step"><span class="step-label">Review</span><h3>Human checkpoint</h3><p>A responsible reviewer checks wording, scope, and provenance.</p></div>
+        <div class="diagram-step"><span class="step-label">Output</span><h3>Non-final draft</h3><p>Reviewable workflow material, not patient-facing medical advice.</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Synthetic-Only Example</h2>
+      <div class="example-box">
+        <div class="example-row"><strong>Packet ID</strong><span>SYN-PACKET-001</span></div>
+        <div class="example-row"><strong>Source documents</strong><span>Synthetic intake note, synthetic visit timeline, synthetic receipt labels, synthetic referral note placeholder.</span></div>
+        <div class="example-row"><strong>Patient-reported concern</strong><span>Fictional person reports wanting help organizing what to bring to an in-person dental appointment.</span></div>
+        <div class="example-row"><strong>Imaging metadata inventory</strong><span>Two fictional image-file labels listed as metadata only; no real imaging files and no image interpretation.</span></div>
+        <div class="example-row"><strong>Missing information</strong><span>Prior clinic note unavailable, medication list not provided, image dates not confirmed.</span></div>
+        <div class="example-row"><strong>Review questions</strong><span>What documents are missing? Which source supports each summary item? What should be clarified with a dentist?</span></div>
+        <div class="example-row"><strong>Provenance</strong><span>Each packet field references a synthetic source label or is marked as missing/unknown.</span></div>
+        <div class="example-row"><strong>Review status</strong><span>needs_manual_review</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Safety Boundary</h2>
+      <p>The project is limited to organization, provenance, and review preparation using synthetic materials. It avoids clinical claims and patient-facing final medical advice.</p>
+    </section>
+
+    <section class="section">
+      <h2>Human-In-The-Loop Workflow</h2>
+      <p>All generated or organized outputs remain draft workflow material until a human reviewer checks scope, source alignment, missing information, and prohibited language.</p>
+    </section>
+
+    <section class="section">
+      <h2>Portfolio Value</h2>
+      <p>This project shows Patrick's ability to design AI-ready data layers around safety, provenance, reviewability, and dental workflow context.</p>
+    </section>
+
+    <section class="section">
+      <h2>Linked Synthetic Artifacts</h2>
+      <div class="grid">
+        <article class="card">
+          <h3><a href="../content/artifacts/dental-case-packet-schema-v0.1.synthetic.json">Packet Schema v0.1</a></h3>
+          <p>Static schema-like JSON for the synthetic dental case packet structure.</p>
+        </article>
+        <article class="card">
+          <h3><a href="../content/artifacts/dental-case-packet-example.synthetic.json">Synthetic Packet Example</a></h3>
+          <p>Fictional packet example with source labels, missing information, provenance, and review status.</p>
+        </article>
+        <article class="card">
+          <h3><a href="../assets/diagrams/synthetic-case-packet-lifecycle.html">Case Packet Lifecycle Diagram</a></h3>
+          <p>Static HTML/CSS diagram showing collection, inventory, structure, review, and archival.</p>
+        </article>
+        <article class="card">
+          <h3><a href="../content/artifacts/human-in-the-loop-review-checklist.md">Human Review Checklist</a></h3>
+          <p>Reusable checklist for keeping packet outputs synthetic, reviewable, and non-final.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Future Safe Milestones</h2>
+      <ul class="checklist">
+        <li>Add more synthetic packet templates.</li>
+        <li>Create static examples of provenance labels and missing-information flags.</li>
+        <li>Draft a local-only checklist for manual packet review.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Static local portfolio. Synthetic example only. No diagnosis, treatment recommendation, image interpretation, second opinion, or clinical validation claim.</p>
+  </footer>
+</body>
+</html>

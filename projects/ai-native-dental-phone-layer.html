@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Native Dental Phone Layer | Patrick Chen</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="../index.html"><strong>Patrick Chen</strong><span>AI dental workflow safety</span></a>
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../profile.html">Profile</a>
+        <a href="../narrative.html">Narrative</a>
+        <a href="../projects.html" aria-current="page">Projects</a>
+        <a href="../walkthrough.html">Walkthrough</a>
+        <a href="../safety.html">Safety</a>
+        <a href="../writing.html">Writing</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <p class="eyebrow">Project 03</p>
+      <h1>AI Native Dental Phone Layer</h1>
+      <p>A dentist-in-the-loop mobile workflow concept for reviewing, editing, escalating, or archiving non-final AI-generated drafts.</p>
+      <nav class="project-switcher" aria-label="Project detail pages">
+        <a href="dental-case-packet.html">Dental Case Packet</a>
+        <a href="clinical-ai-review-harness.html">Review Harness</a>
+        <a href="ai-native-dental-phone-layer.html" aria-current="page">Phone Layer</a>
+        <a href="taiwan-dental-prep.html">Taiwan Dental Prep</a>
+        <a href="../walkthrough.html">End-to-End Walkthrough</a>
+      </nav>
+    </section>
+
+    <section class="section">
+      <h2>Project Detail</h2>
+      <div class="detail-list">
+        <article class="detail-item"><h3>Problem</h3><p>AI-assisted workflow drafts need a clear review queue so sensitive text is not treated as final or sent automatically.</p></article>
+        <article class="detail-item"><h3>Why this matters</h3><p>Mobile review can make human oversight faster while preserving the boundary between draft support and final human action.</p></article>
+        <article class="detail-item"><h3>What this project does</h3><p>It models a local review queue with states for drafted, needs_review, edited, approved_for_manual_send, escalated, and archived.</p></article>
+        <article class="detail-item"><h3>What this project does NOT do</h3><p>It does not send messages automatically, integrate with messaging platforms, collect patient data, provide advice, or operate as teledentistry.</p></article>
+        <article class="detail-item"><h3>Current prototype status</h3><p>Static portfolio concept with a synthetic queue item and state diagram; no app runtime, messaging integration, backend, or notification system.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Static Diagram</h2>
+      <div class="diagram">
+        <div class="diagram-step"><span class="step-label">State 1</span><h3>drafted</h3><p>AI-assisted wording exists only as a non-final draft.</p></div>
+        <div class="diagram-step"><span class="step-label">State 2</span><h3>needs_review</h3><p>Human reviewer checks scope, source fit, and tone.</p></div>
+        <div class="diagram-step"><span class="step-label">State 3</span><h3>edited</h3><p>Reviewer rewrites or removes unsafe language.</p></div>
+        <div class="diagram-step"><span class="step-label">State 4</span><h3>approved_for_manual_send</h3><p>Approval means manual action only, never automatic sending.</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Synthetic-Only Example</h2>
+      <div class="example-box">
+        <div class="example-row"><strong>Queue item</strong><span>SYN-QUEUE-009</span></div>
+        <div class="example-row"><strong>Drafted</strong><span>Fictional draft acknowledges receipt of documents and lists missing items for manual review.</span></div>
+        <div class="example-row"><strong>needs_review</strong><span>Reviewer checks that the draft contains no diagnosis, treatment suggestion, prognosis, or image interpretation.</span></div>
+        <div class="example-row"><strong>edited</strong><span>Reviewer changes final-sounding wording into a neutral document-organization note.</span></div>
+        <div class="example-row"><strong>approved_for_manual_send</strong><span>Reviewer marks the item as approved for a human to manually send through an approved channel outside this prototype.</span></div>
+        <div class="example-row"><strong>Blocked behavior</strong><span>No automatic patient-facing final message, no Gmail, no Line, no Calendar, no payment, no email integration.</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Safety Boundary</h2>
+      <p>The project is a workflow-state concept only. It does not collect user data, send messages, automate outreach, or provide medical services.</p>
+    </section>
+
+    <section class="section">
+      <h2>Human-In-The-Loop Workflow</h2>
+      <p>A human reviewer must approve, edit, escalate, or archive every draft. Approval indicates readiness for manual handling, not automatic delivery.</p>
+    </section>
+
+    <section class="section">
+      <h2>Portfolio Value</h2>
+      <p>This project shows Patrick's ability to design operational states for safe AI-assisted workflows while keeping sensitive actions under human control.</p>
+    </section>
+
+    <section class="section">
+      <h2>Linked Synthetic Artifacts</h2>
+      <div class="grid">
+        <article class="card">
+          <h3><a href="../content/artifacts/ai-native-dental-phone-layer-review-queue.synthetic.json">Review Queue Lifecycle</a></h3>
+          <p>Fictional queue item moving from drafted to needs_review to edited to approved_for_manual_send.</p>
+        </article>
+        <article class="card">
+          <h3><a href="../content/artifacts/human-in-the-loop-review-checklist.md">Human Review Checklist</a></h3>
+          <p>Reusable review steps for manual approval and escalation conditions.</p>
+        </article>
+        <article class="card">
+          <h3><a href="../assets/diagrams/human-in-the-loop-review-flow.html">Human Review Flow Diagram</a></h3>
+          <p>Static HTML/CSS diagram emphasizing manual review and no automatic delivery.</p>
+        </article>
+        <article class="card">
+          <h3><a href="../content/artifacts/prohibited-claims-and-safe-rewrites.md">Safe Rewrite Examples</a></h3>
+          <p>Unsafe output examples rewritten into bounded workflow language.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Future Safe Milestones</h2>
+      <ul class="checklist">
+        <li>Add static queue-state examples for escalation and archival.</li>
+        <li>Create synthetic review labels for source mismatch and unsafe tone.</li>
+        <li>Draft a local-only manual approval checklist.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Static local portfolio. Synthetic example only. No automatic messages, external integrations, teledentistry, or medical advice.</p>
+  </footer>
+</body>
+</html>

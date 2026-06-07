@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Synthetic End-to-End Walkthrough | Patrick Chen</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><strong>Patrick Chen</strong><span>AI dental workflow safety</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="narrative.html">Narrative</a>
+        <a href="projects.html">Projects</a>
+        <a href="walkthrough.html" aria-current="page">Walkthrough</a>
+        <a href="safety.html">Safety</a>
+        <a href="writing.html">Writing</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <p class="eyebrow">Synthetic End-to-End Walkthrough</p>
+      <h1>One Fictional Context Through The Dental AI Workflow Safety Stack</h1>
+      <p>This local-only walkthrough shows how a synthetic case context moves from organized source material to safety review, queue review, and preparation-oriented output.</p>
+      <div class="notice warning">
+        Fictional synthetic case only. No real PHI, real patient data, real imaging files, diagnosis, treatment recommendation, image interpretation, second opinion, clinical service, real patient use, teledentistry, or patient-facing final medical advice.
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Workflow Path</h2>
+      <div class="diagram">
+        <div class="diagram-step"><span class="step-label">Step 1</span><h3>Case Packet</h3><p>Fragmented synthetic context becomes source-grounded packet fields.</p></div>
+        <div class="diagram-step"><span class="step-label">Step 2</span><h3>Review Harness</h3><p>Workflow Safety Review Harness for Synthetic Drafts checks boundary risk.</p></div>
+        <div class="diagram-step"><span class="step-label">Step 3</span><h3>Phone Queue</h3><p>A non-final draft moves through manual review states.</p></div>
+        <div class="diagram-step"><span class="step-label">Step 4</span><h3>Taiwan Dental Prep</h3><p>The output remains preparation-oriented for an in-person appointment.</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Architecture Summary</h2>
+      <div class="grid">
+        <article class="card"><h3>Data layer</h3><p>Dental Case Packet organizes synthetic dental workflow context into source-grounded, reviewable inputs.</p></article>
+        <article class="card"><h3>Safety evaluation layer</h3><p>Clinical AI Review Harness, paired with Workflow Safety Review Harness for Synthetic Drafts, checks boundary risk and review routing.</p></article>
+        <article class="card"><h3>Review workflow layer</h3><p>AI Native Dental Phone Layer keeps draft material in manual dentist review states.</p></article>
+        <article class="card"><h3>Market validation use case</h3><p>Taiwan Dental Prep keeps the output appointment-preparation and document-organization oriented.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Synthetic Starting Point</h2>
+      <div class="example-box">
+        <div class="example-row"><strong>Scenario</strong><span>Fictional overseas Taiwanese adult preparing for an in-person appointment with a Taiwan dentist.</span></div>
+        <div class="example-row"><strong>Available context</strong><span>Synthetic notes, fictional file labels, travel timing constraints, and questions about which records to bring.</span></div>
+        <div class="example-row"><strong>Data boundary</strong><span>No real PHI, real patient data, real imaging files, real clinic details, real phone numbers, real email addresses, or real addresses.</span></div>
+        <div class="example-row"><strong>Clinical boundary</strong><span>No diagnosis, treatment recommendation, image interpretation, prognosis, second opinion, price guarantee, timeline guarantee, or teledentistry.</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Step 1: Dental Case Packet</h2>
+      <p>Fragmented information is organized into a reviewable, provenance-aware packet before any AI-assisted draft is considered.</p>
+      <div class="example-box">
+        <div class="example-row"><strong>Patient-reported concern</strong><span>Fictional concern: wants help organizing documents and questions before travel.</span></div>
+        <div class="example-row"><strong>Source document inventory</strong><span>Synthetic intake note, fictional previous-visit timeline, synthetic medication-list placeholder, and document labels.</span></div>
+        <div class="example-row"><strong>Imaging metadata inventory</strong><span>Fictional image-file labels listed as metadata only; no imaging files and no image interpretation.</span></div>
+        <div class="example-row"><strong>Travel/timing constraints</strong><span>Fictional travel window, appointment-preparation questions, and uncertainty about how much discussion time to reserve.</span></div>
+        <div class="example-row"><strong>Missing information</strong><span>Prior chart unavailable, source dates unconfirmed, image metadata incomplete, and medication list not reviewed.</span></div>
+        <div class="example-row"><strong>Questions for human review</strong><span>Which records are missing? Which source supports each statement? What should be clarified during an in-person appointment?</span></div>
+        <div class="example-row"><strong>Provenance records</strong><span>Each field maps to a synthetic source label or is marked missing/unknown.</span></div>
+        <div class="example-row"><strong>Review status</strong><span>needs_manual_review</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Step 2: Workflow Safety Review Harness</h2>
+      <p>The Clinical AI Review Harness, subtitled Workflow Safety Review Harness for Synthetic Drafts, checks a synthetic AI-assisted draft for boundary and provenance problems.</p>
+      <div class="example-box">
+        <div class="example-row"><strong>Prohibited diagnosis language</strong><span>Blocked if the draft states or implies a diagnosis.</span></div>
+        <div class="example-row"><strong>Treatment recommendation language</strong><span>Blocked if the draft suggests a plan, compares options, or tells the person what to choose.</span></div>
+        <div class="example-row"><strong>Unsupported inference</strong><span>Flagged when the draft adds information not present in the synthetic packet.</span></div>
+        <div class="example-row"><strong>Missing-information awareness</strong><span>Required when source fields are incomplete or unknown.</span></div>
+        <div class="example-row"><strong>Provenance grounding</strong><span>Every summary statement must map to a synthetic source label or be removed.</span></div>
+        <div class="example-row"><strong>Human review</strong><span>Required before any use outside the local synthetic portfolio context.</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Step 3: AI Native Dental Phone Layer</h2>
+      <p>The phone-layer concept keeps the draft in a human review queue. Approval means manual handling only, never automatic sending.</p>
+      <div class="diagram">
+        <div class="diagram-step"><span class="step-label">Queue</span><h3>drafted</h3><p>Non-final wording exists as internal workflow material.</p></div>
+        <div class="diagram-step"><span class="step-label">Queue</span><h3>needs_review</h3><p>A reviewer checks source fit, missing information, and boundary language.</p></div>
+        <div class="diagram-step"><span class="step-label">Queue</span><h3>edited</h3><p>Unsafe or final-sounding wording is removed or rewritten.</p></div>
+        <div class="diagram-step"><span class="step-label">Queue</span><h3>approved_for_manual_send</h3><p>A human may manually handle the message outside this prototype.</p></div>
+      </div>
+      <div class="notice warning">
+        No automatic patient-facing final messages. No messaging integration, email sending, Gmail, Line, Calendar, payment, backend, or external service connection.
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Step 4: Taiwan Dental Prep / 台灣安心看牙</h2>
+      <p>The safe output becomes a preparation-oriented packet for organizing materials and questions before an in-person appointment with a Taiwan dentist.</p>
+      <div class="example-box">
+        <div class="example-row"><strong>Available information</strong><span>Synthetic source labels, fictional document inventory, and travel-preparation context.</span></div>
+        <div class="example-row"><strong>Missing documents</strong><span>Recent chart unavailable, prior office note unavailable, image metadata incomplete.</span></div>
+        <div class="example-row"><strong>Appointment-preparation questions</strong><span>Which documents would be useful to bring? Which missing records should be requested before travel?</span></div>
+        <div class="example-row"><strong>Timing uncertainty</strong><span>Questions are framed for discussion with the Taiwan dentist, not as timeline guarantees.</span></div>
+        <div class="example-row"><strong>Document reminders</strong><span>Bring organized source labels, medication-list placeholder, and missing-document notes if available.</span></div>
+        <div class="example-row"><strong>Human review note</strong><span>A reviewer confirms that the packet stays preparation-oriented and removes unsafe wording.</span></div>
+      </div>
+      <div class="notice warning">
+        This is not diagnosis, treatment recommendation, price guarantee, timeline guarantee, outcome guarantee, teledentistry, or automatic second opinion.
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>What This Walkthrough Proves</h2>
+      <ul class="checklist">
+        <li>Patrick can translate dental workflow ambiguity into structured case context.</li>
+        <li>The system preserves provenance and missing-information awareness.</li>
+        <li>High-risk claims are routed to human review instead of being answered automatically.</li>
+        <li>The portfolio demonstrates workflow architecture, not autonomous clinical AI.</li>
+        <li>The walkthrough is synthetic-only and local-only.</li>
+      </ul>
+      <div class="actions">
+        <a class="button" href="projects.html">View Projects</a>
+        <a class="button secondary" href="safety.html">View Safety Boundaries</a>
+        <a class="button secondary" href="handoff.html">Open Reviewer Handoff</a>
+        <a class="button secondary" href="content/LIMITED_PRIVATE_SHARING_HANDOFF.md">Limited Sharing Note</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Static local walkthrough. Synthetic-only portfolio content; public deployment is not approved.</p>
+  </footer>
+</body>
+</html>

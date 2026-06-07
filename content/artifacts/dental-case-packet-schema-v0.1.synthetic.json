@@ -1,0 +1,65 @@
+{
+  "schema_name": "dental_case_packet_schema",
+  "schema_version": "0.1-synthetic",
+  "positioning": "Dentist building safe, human-in-the-loop AI workflow infrastructure for dental and healthcare-adjacent use cases.",
+  "synthetic_case_notice": {
+    "required": true,
+    "description": "Clear statement that the packet is fictional, synthetic-only, local-only, contains no PHI, and is not for clinical use."
+  },
+  "packet_id": {
+    "type": "string",
+    "description": "Synthetic packet identifier such as SYN-PACKET-001."
+  },
+  "source_documents": {
+    "type": "array",
+    "description": "Inventory of synthetic source labels, not real records.",
+    "item_fields": ["source_id", "source_type", "synthetic_label", "provided_status", "notes"]
+  },
+  "imaging_metadata_inventory": {
+    "type": "array",
+    "description": "Metadata labels only. No real imaging files and no image interpretation.",
+    "item_fields": ["image_label", "modality_label", "file_status", "metadata_complete", "interpretation_status"]
+  },
+  "patient_reported_concerns": {
+    "type": "array",
+    "description": "Fictional self-reported concerns for workflow organization only, not diagnosis.",
+    "item_fields": ["concern_id", "reported_text", "source_id", "needs_human_review"]
+  },
+  "external_plan_quotes": {
+    "type": "array",
+    "description": "Synthetic excerpts or labels from externally provided materials, preserved as quotes without judging correctness.",
+    "item_fields": ["quote_id", "source_id", "quoted_text", "context_note", "review_status"]
+  },
+  "travel_timing_constraints": {
+    "type": "array",
+    "description": "Fictional travel or scheduling constraints to organize questions for a human reviewer."
+  },
+  "cost_administrative_constraints": {
+    "type": "array",
+    "description": "Fictional insurance, payment, receipt, or administrative questions. No price guarantee or affordability judgment."
+  },
+  "missing_information": {
+    "type": "array",
+    "description": "Items that are absent, unclear, stale, or require human follow-up.",
+    "item_fields": ["missing_item", "why_it_matters_for_workflow", "suggested_human_question"]
+  },
+  "questions_for_human_review": {
+    "type": "array",
+    "description": "Questions to ask a qualified human reviewer or dentist, without diagnosis or treatment recommendation."
+  },
+  "provenance_records": {
+    "type": "array",
+    "description": "Links between packet fields and synthetic source labels.",
+    "item_fields": ["packet_field", "source_id", "support_level", "uncertainty_note"]
+  },
+  "safety_labels": {
+    "type": "object",
+    "description": "Boundary flags for non-diagnostic, synthetic-first, human-reviewed workflow status.",
+    "fields": ["synthetic_only", "no_phi", "no_diagnosis", "no_treatment_recommendation", "no_prognosis", "no_image_interpretation", "no_automatic_second_opinion", "human_review_required"]
+  },
+  "review_status": {
+    "type": "string",
+    "allowed_values": ["drafted", "needs_review", "edited", "approved_for_manual_use", "archived", "rejected"],
+    "description": "Manual workflow status. Approval never means automatic patient-facing final messaging."
+  }
+}

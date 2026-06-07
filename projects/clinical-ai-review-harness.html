@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clinical AI Review Harness | Patrick Chen</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="../index.html"><strong>Patrick Chen</strong><span>AI dental workflow safety</span></a>
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../profile.html">Profile</a>
+        <a href="../narrative.html">Narrative</a>
+        <a href="../projects.html" aria-current="page">Projects</a>
+        <a href="../walkthrough.html">Walkthrough</a>
+        <a href="../safety.html">Safety</a>
+        <a href="../writing.html">Writing</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <p class="eyebrow">Project 02</p>
+      <h1>Clinical AI Review Harness</h1>
+      <p><strong>Workflow Safety Review Harness for Synthetic Drafts.</strong></p>
+      <p>A local-only, synthetic-data-first safety evaluation concept for checking whether AI-generated summaries, drafts, and review items stay inside safe boundaries.</p>
+      <div class="notice warning">
+        This harness evaluates workflow-safety boundaries in synthetic drafts. It is not a medical benchmark, not clinical validation, and not a diagnostic evaluation system.
+      </div>
+      <nav class="project-switcher" aria-label="Project detail pages">
+        <a href="dental-case-packet.html">Dental Case Packet</a>
+        <a href="clinical-ai-review-harness.html" aria-current="page">Review Harness</a>
+        <a href="ai-native-dental-phone-layer.html">Phone Layer</a>
+        <a href="taiwan-dental-prep.html">Taiwan Dental Prep</a>
+        <a href="../walkthrough.html">End-to-End Walkthrough</a>
+      </nav>
+    </section>
+
+    <section class="section">
+      <h2>Project Detail</h2>
+      <div class="detail-list">
+        <article class="detail-item"><h3>Problem</h3><p>AI-generated workflow drafts can drift into unsupported claims, final-sounding advice, or unclear source attribution if there is no review harness.</p></article>
+        <article class="detail-item"><h3>Why this matters</h3><p>Healthcare-adjacent AI workflows need explicit checks for scope, provenance, and human-review requirements before drafts are used.</p></article>
+        <article class="detail-item"><h3>What this project does</h3><p>It models checks for safe routing, prohibited-output detection, provenance completeness, and required human review using fictional examples.</p></article>
+        <article class="detail-item"><h3>What this project does NOT do</h3><p>It does not claim clinical validation, benchmark performance, medical accuracy, diagnosis capability, treatment recommendation capability, prognosis, or image interpretation.</p></article>
+        <article class="detail-item"><h3>Current prototype status</h3><p>Static portfolio concept with example result tables and boundary categories; no runtime evaluator and no external service integration.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Static Diagram</h2>
+      <div class="diagram">
+        <div class="diagram-step"><span class="step-label">Draft</span><h3>Workflow text</h3><p>Synthetic AI-assisted summary or review item.</p></div>
+        <div class="diagram-step"><span class="step-label">Check</span><h3>Boundary scan</h3><p>Looks for prohibited-output patterns and missing scope labels.</p></div>
+        <div class="diagram-step"><span class="step-label">Route</span><h3>Safety status</h3><p>Routes to pass, revise, escalate, or reject for manual review.</p></div>
+        <div class="diagram-step"><span class="step-label">Review</span><h3>Human required</h3><p>No sensitive output is treated as final without manual review.</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Synthetic-Only Example</h2>
+      <div class="example-box">
+        <div class="example-row"><strong>Evaluation ID</strong><span>SYN-EVAL-014</span></div>
+        <div class="example-row"><strong>Input type</strong><span>Fictional case packet summary draft.</span></div>
+        <div class="example-row"><strong>Safe routing</strong><span>revise_before_review because one sentence sounded final instead of draft-like.</span></div>
+        <div class="example-row"><strong>Prohibited-output detection</strong><span>Flagged final medical-advice tone; no diagnosis or treatment recommendation permitted.</span></div>
+        <div class="example-row"><strong>Provenance check</strong><span>Two summary bullets had source labels; one bullet required a missing-information note.</span></div>
+        <div class="example-row"><strong>Human-review requirement</strong><span>required before any use outside the synthetic prototype.</span></div>
+        <div class="example-row"><strong>Claim boundary</strong><span>No clinical validation, benchmark performance, medical accuracy, or regulatory compliance claim.</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Safety Boundary</h2>
+      <p>The harness checks workflow language and documentation structure only. It does not evaluate clinical correctness or replace professional judgment.</p>
+    </section>
+
+    <section class="section">
+      <h2>Human-In-The-Loop Workflow</h2>
+      <p>Every flagged draft routes to a human reviewer for revision, escalation, or rejection. Passing a boundary check is not approval for patient-facing final advice.</p>
+    </section>
+
+    <section class="section">
+      <h2>Portfolio Value</h2>
+      <p>This project demonstrates Patrick's safety-first approach to AI workflow infrastructure, including explicit failure modes and review gates.</p>
+    </section>
+
+    <section class="section">
+      <h2>Linked Synthetic Artifacts</h2>
+      <div class="grid">
+        <article class="card">
+          <h3><a href="../content/artifacts/clinical-ai-review-harness-rubric.synthetic.md">Review Harness Rubric</a></h3>
+          <p>Synthetic rubric for prohibited-output detection, provenance grounding, routing, and safe rewrites.</p>
+        </article>
+        <article class="card">
+          <h3><a href="../content/artifacts/clinical-ai-review-harness-result.synthetic.json">Fictional Review Result</a></h3>
+          <p>Static example result showing risks, findings, routing, and reviewer notes.</p>
+        </article>
+        <article class="card">
+          <h3><a href="../assets/diagrams/human-in-the-loop-review-flow.html">Human Review Flow Diagram</a></h3>
+          <p>Static HTML/CSS diagram for screening, review, approval, and audit notes.</p>
+        </article>
+        <article class="card">
+          <h3><a href="../content/artifacts/prohibited-claims-and-safe-rewrites.md">Prohibited Claims And Safe Rewrites</a></h3>
+          <p>Clearly marked unsafe examples rewritten into preparation-oriented language.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Future Safe Milestones</h2>
+      <ul class="checklist">
+        <li>Define static test categories for prohibited workflow language.</li>
+        <li>Add synthetic before-and-after examples of safer draft wording.</li>
+        <li>Create a local-only review checklist for manual evaluation.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Static local portfolio. Synthetic example only. No clinical validation, diagnosis, treatment recommendation, or medical accuracy claim.</p>
+  </footer>
+</body>
+</html>
