@@ -30,9 +30,7 @@ Created:
 - `content/POST_DEPLOYMENT_RECORD.md`
 - `content/POST_DEPLOYMENT_RECORD_TOKEN_REVOCATION_GATE.md`
 
-Changed:
-
-- `README.md`
+No public-facing HTML page was changed by this gate.
 
 ## Token Revocation Confirmation
 
