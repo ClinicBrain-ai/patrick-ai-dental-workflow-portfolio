@@ -691,7 +691,7 @@ Deployment implementation is allowed to be discussed in a separate gate:
 
 This gate did not deploy anything. No deployment files, GitHub Pages configuration, GitHub Actions, analytics, forms, scripts, backend, database, external integrations, contact capture, external URLs, or real data were added.
 
-All patient-facing use, real patient data, real user intake, analytics, forms, backend services, integrations, diagnosis, treatment recommendation, image interpretation, second opinion, teledentistry, clinical validation, medical device claims, U.S. dental licensure claims, and clinical care offers remain blocked.
+All patient-facing use, real patient data, real user intake, analytics, forms, backend services, integrations, clinical conclusion claims, treatment-plan-related wording, imaging-document claim handling, independent clinical-opinion workflows, remote dental service claims, validation claims, medical device claims, U.S. dental licensure claims, and clinical care offers remain blocked.
 
 ## Static Public Deployment Implementation Gate
 
@@ -759,7 +759,7 @@ No deployment has been configured. Do not deploy this repository unless explicit
 - Backend, database, analytics, tracking, or external API integration.
 - Forms, email capture, payment, Gmail, Line, Supabase, Calendar, or email integration.
 - Real patient data, real PHI, real imaging files, or real patient records.
-- Diagnosis, treatment recommendation, prognosis, image interpretation, automatic second opinion, teledentistry, clinical validation, or automatic patient-facing final-message claims.
+- Clinical conclusion, treatment-plan-related wording, prognosis, imaging-document claim handling, independent clinical-opinion workflow, remote dental service, validation, or automatic patient-facing final-message claims.
 - U.S. licensure claims, production readiness claims, medical device readiness claims, or clinical authority claims not explicitly approved and supported.
 - Automatic PDF generation, PDF libraries, build scripts, real contact details, real addresses, or real clinic details.
 - Screenshot automation, generated screenshots, binary image generation, external image assets, SVG imports, canvas, Mermaid, or external libraries.
